@@ -4,7 +4,7 @@ import json
 
 class TestStation(unittest.TestCase):
   def setUp(self):
-    with open("assets/data.json", "r") as f:
+    with open("python-exercice-station\\assets\\data.json", "r", encoding="utf-8") as f:
       self.data = "".join(f.readlines())
 
   def test_should_load_from_dict(self):
